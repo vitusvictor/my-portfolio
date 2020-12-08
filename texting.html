@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+
+    <style>
+        /* .box{
+            
+        } */
+
+        body{
+            margin: 0;
+    
+        }
+        #red{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* float:right; */
+            margin-bottom: 40px;
+            
+           
+        }
+        #blue{display: inline-block;
+            width: 100px;
+            height: 200px;
+            background-color: blue;
+            margin-bottom: 40px;
+            margin-right: 30px;
+            /* float:right; */
+        }
+        #yellow{display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(94, 94, 22);
+            box-shadow: 14px 100px 3px rgb(44, 35, 66);
+            /* float: right; */
+            margin-bottom: 40px;
+            
+        }
+        #green{display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-bottom: 40px;
+            /* float: right; */
+            /* clear: right; */
+        }
+        #black{display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin-bottom: 40px;
+            
+        }
+
+        #hello{
+            margin-top: 100px;
+            background-color: rgb(106, 116, 209);
+            height: 4em;
+        }
+
+        div ~ p{
+            font-size: 20px;
+            color: blue;
+        }
+
+      
+    </style>
+
+   
+</head>
+
+
+<body>
+    <div class="box">
+        <div id="red"><span>this is the item to be inlined</span></div>
+        <div id="blue"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+        <div id="black"></div>
+
+    </div>
+
+    <div class="one">
+        <div class="two">
+
+        </div>
+    </div>
+    
+
+    <div id="hello" >hello hello hello</div>
+    <button onclick="animation()">button</button>
+
+   <div style="margin: 0 auto; width: 1200px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque perspiciatis similique minus earum consequatur quaerat aliquam sunt, laboriosam adipisci mollitia, officiis iusto nulla obcaecati labore facilis sint placeat ut distinctio. Porro a nobis repudiandae expedita doloribus quis ab, iste et autem nam similique omnis sequi nostrum fugiat ad praesentium explicabo. Blanditiis dignissimos, facilis nam fugit voluptas officia nihil soluta dolore sapiente dicta recusandae accusamus libero! Nesciunt mollitia est eaque modi perferendis nemo explicabo sapiente possimus sed, maiores quos quisquam quae quibusdam ullam ad vero voluptas obcaecati unde tenetur placeat commodi. Iusto exercitationem, vel autem accusamus harum est iure expedita natus!</div>
+
+   <dl>
+    <dt>A</dt>
+    <dd>Andrew W.K.</dd>
+    <dd>Apparat</dd>
+    <dd>Arcade Fire</dd>
+    <dd>At The Drive-In</dd>
+    <dd>Aziz Ansari</dd>
+  </dl>
+
+  <dl>
+    <dt>A</dt>
+    <dd>Andrew W.K.</dd>
+    <dd>Apparat</dd>
+    <dd>Arcade Fire</dd>
+    <dd>At The Drive-In</dd>
+    <dd>Aziz Ansari</dd>
+  </dl>
+
+  <div class="container">
+    <p>Apple</p>
+    <div>
+      <p>An apple a day keeps doctor away!</p>
+    </div>
+    <p>Banana</p>
+    <p>Cherry</p>
+  </div>
+
+  <p>pear</p>
+  <p>another pear</p>
+
+  </body>
+
+<script type="text/javascript">
+    // $(document).ready(function(){
+
+        function animation(){
+            var inner = document.getElementById("hello").innerHTML="chnage";
+            // inner.style.color="red";
+            // inner.style.fontWeight="bold";
+        }
+
+        // var i = 0;
+        // var text = "hello hello hello"
+
+        // function animation(){
+        //     if(i<text.length){
+        //         var inner = document.getElementById("hello").innerHTML;
+        //         inner[i].style.visibility="visible";
+        //         i++;
+        //         setTimeout(animation, 50);
+        //     }
+
+        //     inner.style.visibility="hidden";
+        //     i = 0;
+        //     setInterval(animation, 2000);
+        // }
+    // });
+</script>
+</html>

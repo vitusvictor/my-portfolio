@@ -1,0 +1,435 @@
+:root{
+    --mainColor: #606b56;
+    --secondaryColor: #515a48;
+    --borderColor:rgb(50, 116, 50);
+    --hrColor: rgb(50, 116, 50);
+    --lightBackgroundTextColor: #000000;
+    --darkBackgroundTextColor: rgb(238, 234, 234);
+    --profileColor: rgb(223, 223, 223);
+    --softwareDevColor: rgb(0, 0, 0);
+    --themeDotBorder: #fff;
+    --btnColor: rgb(223, 223, 223);
+    --aboutAndResumeBorder:  rgb(223, 223, 223);
+    --selectThemeColor: #fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{  
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--mainColor);
+}
+
+body *{
+    transition: 0.3s;
+}
+
+header{
+    position: -webkit-sticky;
+    position: -o-sticky;
+    position: -moz-sticky;
+    position: sticky;
+    top: 0;
+    height: 150px;
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 2px solid var(--borderColor);
+}
+
+.nav-container{
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondaryColor); 
+    padding-top: 79px;
+    padding-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.nav-child{
+    color: var(--darkBackgroundTextColor);
+    text-decoration: none;
+}
+
+.nav:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+#close-icon-container{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-size:30px;
+    transition: 0.5s;
+    cursor: pointer;   
+}
+
+#close-side{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+#content-side{
+    width: 60%;
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    font-size: 18px;
+    font-weight: lighter;
+    gap: 20px;
+    align-items: center;
+    color: var(--darkBackgroundTextColor);
+}
+
+
+#hub-icon-container{
+    display: inline-block;
+    position: absolute;
+    height: 34px;
+    width: 0;
+    top: 25px;
+    right: 30px;
+    overflow: hidden;
+}
+
+#hub-icon{
+    font-size: 25px;
+    color: var(--darkBackgroundTextColor);
+}
+
+.about-resume-container{
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 50px auto;
+    color: var(--darkBackgroundTextColor);
+    padding: 20px;
+}
+
+#about-1{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+#the-resume{
+    color: var(--darkBackgroundTextColor);
+}
+
+.contact-container{
+    margin-top: 100px;
+}
+/********* theme dots ******** */
+.theme-container{
+    width: 1100px;
+    margin: auto;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'first'
+    'second';
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.writing{
+    padding-right: 67px;
+    grid-area: first;
+    font-style: italic;
+    color: var(--selectThemeColor);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.themes{
+    padding-right: 88px;
+    grid-area: second;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.theme-dot{
+    background-color: black;
+    border: 2px solid var(--themeDotBorder);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.theme-dot:hover{
+    transform: scale(1.33);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/******** backdrop-color ********* */
+.screen{
+    width: 1100px;
+    height: 70vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#profile-box{
+    width: 100%;
+    height: 100%;
+   
+}
+
+#backdrop-color{
+    height: 100%;
+    width: 70%;
+    display: inline-block;
+    background-color: var(--secondaryColor); 
+    border: 2px solid var(--borderColor);
+    padding-top: 20%;
+}
+
+#profile{
+    display: inline-block;
+    height: 90%;
+    width: 80%;
+    background-color: var(--profileColor);
+    margin-left: 40%;
+    text-align: center;
+    padding: 10%;
+    padding-top: 15%;
+}
+
+#myimg {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+}
+
+#intro-and-media{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.hi{
+    display: inline-block;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    height: 120px;
+    width: 70%;
+}
+
+.hr{
+    width: 60px;
+    height: 2px;
+    display: inline-block;
+    background-color: var(--hrColor);
+}
+
+h3{
+    border: 0px;
+    font-size: 1vw;
+    color: var(--softwareDevColor);
+}
+
+h4{
+    margin-top: 60px;
+    text-align: center;
+    color: var(--darkBackgroundTextColor);
+}
+
+/****** intro and media *********/
+#text{
+    color: var(--darkBackgroundTextColor);
+}
+
+.media{
+    display: inline-block;
+    text-align: center;
+}
+
+.about-and-resume{
+    margin-top: 30px;
+    text-align: center;
+    color: var(--btnColor);
+}
+
+.icon{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+#about{
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid var(--aboutAndResumeBorder);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#about:hover{
+    transform: scale(1.03);
+}
+
+#resume{
+    margin-left: 10px;
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid var(--aboutAndResumeBorder);
+    border-radius: 8px;   
+    transition: 0.3s;
+}
+
+#resume:hover{
+    transform: scale(1.03);
+}
+
+
+/* ********* CONTACT ********* */
+#get-in-touch{
+    text-align: center;   
+    color: var(--darkBackgroundTextColor);
+}
+
+#contact-form{
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--secondaryColor);
+    margin-bottom: 50px;
+    color: var(--darkBackgroundTextColor);
+}
+
+.input-field{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    font-size: 14px;
+    color: var(--darkBackgroundTextColor);
+}
+
+.submit-btn{
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--darkBackgroundTextColor);
+    background-color: var(--mainColor);
+    border: none;
+}
+
+#contact-form label{
+    line-height: 2.7em;
+}
+
+#contact-form textarea{
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 14px;
+    color: var(--darkBackgroundTextColor);
+}
+
+
+/*********** responsiveness ********* */
+@media  (max-width: 1095px){
+    header{
+        width: 100vw;  
+    }
+
+    .nav-container{
+        padding-right: 5%;
+        gap: 10px; 
+    }
+
+    .about-resume-container{
+        width: 100%;
+    }
+
+    .screen{
+        display: block;
+        width: 100%;
+    }
+
+    .theme-container{
+        width: 100%
+    }
+
+    #backdrop-color{
+        width: 50%;
+    }
+
+    h3{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 414px){
+    .writing{
+        font-size: 12px;
+        padding-right: 31px;
+    }
+    
+    .themes{
+        padding-right: 35px;
+    }
+
+    #profile{
+        padding-top: 25%;
+    }
+}
+
+@media (max-width: 375px){
+    .hi{
+        height: 215px;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 660px){
+        
+    header{
+        width: 100%;
+        background-color: var(--secondaryColor); 
+        height: 80px;  
+    }
+
+    .nav-container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    #hub-icon-container{
+        width: 23px;   
+    } 
+}

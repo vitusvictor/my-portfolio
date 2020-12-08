@@ -1,0 +1,14 @@
+:root{
+    --mainColor: #ffffff;
+    --secondaryColor:  #eaeaea;
+    --borderColor:#000;
+    --hrColor: #000000;
+    --lightBackgroundTextColor: #ffffff;
+    --darkBackgroundTextColor: rgb(3, 3, 3);
+    --profileColor: rgb(168, 166, 166);
+    --softwareDevColor: rgb(3, 3, 3);
+    --themeDotBorder: rgb(0, 0, 0);
+    --btnColor: black;
+    --aboutAndResumeBorder:  rgb(0, 0, 0);
+    --selectThemeColor: rgb(0, 0, 0);
+}
