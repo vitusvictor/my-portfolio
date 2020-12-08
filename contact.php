@@ -1,3 +1,5 @@
+<?php (include_once("landing-page.html")) ?>
+
 <?php
 
 if(isset($_POST['submitForm'])){
