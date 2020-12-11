@@ -174,11 +174,11 @@ header{
     border-radius: 50%;
 }
 
-.theme-dot:hover{
+/* .theme-dot:hover{
     transform: scale(1.33);
     transition: 0.3s;
     cursor: pointer;
-}
+} */
 
 
 /******** backdrop-color ********* */
